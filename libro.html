@@ -44,7 +44,7 @@
   <main class="mt-4">
     <div class="container">
       <h2>Nuovo Libro</h2>
-      <form class="row gap-3">
+      <form class="row gy-4 ">
         <div class="col-6">
           <label for="Name-Autor" class="form-label">Nome Autore</label>
           <input type="text" class="form-control" id="Name-Autor" placeholder="Inserisci il nome dell'autore">
@@ -61,10 +61,23 @@
           <input type="text" class="form-control" id="Title" placeholder="Inserisci il titolo del libro">
           <h3 class="fw-light fs-6 mt-3">Titolo versione italiana</h3>
         </div>
-        
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+
+        <div class="col-12 col-md-4">
+          <label for="genere" class="form-label">Genere</label>
+          <select class="form-select" aria-label="Default select example" id="genere">
+            <option selected>Scegli Genere</option>
+            <option value="fantasy">fantasy</option>
+            <option value="avventura">avventura</option>
+            <option value="commedia">commedia</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="anno" class="form-label">Anno di pubblicazione</label>
+          <input type="number" class="form-control" id="anno" placeholder="Inserisci l'anno">
+        </div>
+        <div class="col-12 col-md-4"><label for="isbn" class="form-label">ISBN#</label>
+          <input type="number" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#">
+        </div>
       </form>
     </div>
   </main>
